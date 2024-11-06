@@ -1,13 +1,19 @@
-import { useState } from "react";
+import{ useState } from "react";
 
 
-const Login = () => {
+
+const Login = ({handleLogin}) => {
+  console.log(handleLogin)
 
 const [email,setEmail] = useState('')
 const [password, setPassword] = useState('')
 
+
+
 const  submitHandler =(e)=> {
   e.preventDefault()
+handleLogin(email,password)
+
 console.log("email is",email);
 console.log("password is",password);
 setEmail("")
@@ -15,7 +21,7 @@ setPassword("")
 
 }
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
+    <div className=" bg-red-400 h-screen w-screen flex items-center justify-center">
       <div className="border-2  p-20 border-emerald-600 rounded-xl" >
         <form 
         onSubmit={(e) => {
