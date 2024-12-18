@@ -18,7 +18,7 @@ const logOutUser= ()=>{
   
   return (
     <div className="flex items-end justify-between">
-<h1 className=" text-white text-2xl font-medium"> hello  <br/> <span className=" text-white text-3xl font-semibold">userame👋</span> </h1>
+<h1 className=" text-white text-2xl font-medium"> hello  <br/> <span className=" text-white text-3xl font-semibold">Username👋</span> </h1>
 <button onClick={logOutUser} className= "bg-red-500 text-lg font-medium text-white px-5 py-2 rounded-s-sm"> Log out</button>
 
 
